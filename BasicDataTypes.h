@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Common/NameManglingGuard.h"
-#include <uchar.h>
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -17,10 +16,7 @@ typedef uint16_t UInt16;
 typedef uint32_t UInt32;
 typedef uint64_t UInt64;
 typedef char     Char8;
-typedef char16_t Char15;
-typedef char32_t Char32;
 typedef float    Float32;
 typedef double   Float64;
-typedef size_t   SizeType;
 
 Common_NameManglingGuard_End
