@@ -4,11 +4,11 @@ project(Common C)
 add_library(
     Common
     INTERFACE
-    NameManglingGuard.h
-    CompilerDetection.h
-    BasicDataTypes.h
-    Keywords.h
-    Endian.h
-    Packed.h)
+    Include/Common/NameManglingGuard.h
+    Include/Common/CompilerDetection.h
+    Include/Common/BasicDataTypes.h
+    Include/Common/Keywords.h
+    Include/Common/Endian.h
+    Include/Common/Packed.h)
     
-target_include_directories(Common INTERFACE ${CMAKE_CURRENT_LIST_DIR}/..)
+target_include_directories(Common INTERFACE ${CMAKE_CURRENT_LIST_DIR}/Include)

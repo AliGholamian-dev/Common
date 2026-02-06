@@ -18,5 +18,6 @@ typedef uint64_t UInt64;
 typedef char     Char8;
 typedef float    Float32;
 typedef double   Float64;
+typedef size_t   SizeType;
 
 Common_NameManglingGuard_End
