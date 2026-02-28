@@ -5,6 +5,7 @@ add_library(
     Common
     INTERFACE
     Include/Common/NameManglingGuard.h
+    Include/Common/PlatformDetection.h
     Include/Common/CompilerDetection.h
     Include/Common/BasicDataTypes.h
     Include/Common/Keywords.h

@@ -8,6 +8,8 @@ Common_NameManglingGuard_Begin
     #define Common_Compiler_GCC
 #elif defined(__clang__)
     #define Common_Compiler_CLang
+#elif defined(_MSC_VER)
+    #define Common_Compiler_MSVC
 #else
     #define Common_Compiler_Unknown
     #error "[ Compiler ]: Unknown compiler"

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Common/CompilerDetection.h"
+#include "Common/PlatformDetection.h"
 #include "Common/NameManglingGuard.h"
 
 Common_NameManglingGuard_Begin
@@ -9,7 +9,7 @@ Common_NameManglingGuard_Begin
 #define Common_System_LittleEndian      1234
 #define Common_System_BigEndian         4321
 
-#if defined(__BYTE_ORDER__) && (__BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__)
+#if (defined(__BYTE_ORDER__) && (__BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__)) || defined(Common_Platform_Windows64) || defined(Common_Platform_Windows32)
     #define Common_System_ByteOrder Common_System_LittleEndian
 #elif defined(__BYTE_ORDER__) && (__BYTE_ORDER__ == __ORDER_BIG_ENDIAN__)
     #define Common_System_ByteOrder Common_System_BigEndian
