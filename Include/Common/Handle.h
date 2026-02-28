@@ -1,6 +1,5 @@
 #pragma once
 
-#include "Common/BasicDataTypes.h"
 #include "Common/NameManglingGuard.h"
 
 Common_NameManglingGuard_Begin
