@@ -12,6 +12,6 @@ add_library(
     Include/Common/Endian.h
     Include/Common/Handle.h
     Include/Common/Packed.h
-    Include/Common/FixedArray.h)
+    Include/Common/StringHelpers.h)
     
 target_include_directories(Common INTERFACE ${CMAKE_CURRENT_LIST_DIR}/Include)
